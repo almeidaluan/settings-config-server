@@ -1,18 +1,12 @@
-server:
-  port: 8888
 spring:
   application:
-    name: settings-config-server
-  #profiles:
-  #  active:
-  #    - native
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/almeidaluan/settings-config-server
-          #username:
-          #password:
-          default-label: master
-          search-paths:
-            - 'greeting-service*'
+    name: greeting-service
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - '*'
+greeting-service:
+  greeting: "Hello"
+  default-value: "World"
