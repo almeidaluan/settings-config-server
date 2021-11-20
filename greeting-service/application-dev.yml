@@ -6,5 +6,5 @@ spring:
 
 
 greeting-service:
-  greeting: "Ola"
+  greeting: "Ola DEV"
   default-value: "Mundo DEV"
